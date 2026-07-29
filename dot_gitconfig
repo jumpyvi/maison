@@ -1,2 +1,10 @@
 [init]
 	defaultBranch = master
+[user]
+	email = jumpyvi@tuta.com
+	name = jumpyvi
+	signingkey = 82CEBF9336CDFF2E
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
