@@ -1,0 +1,7 @@
+[Unit]
+Description=Chezmoi auto re-add and Git push
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/chezmoi-auto

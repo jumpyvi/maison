@@ -1,1 +1,13 @@
-# Created by newuser for 5.9.2
+path+=('/home/linuxbrew/.linuxbrew/'{bin,sbin})
+
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
+autoload -U promptinit; promptinit
+prompt pure
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+bindkey "^H" backward-kill-word
+
+export PATH
