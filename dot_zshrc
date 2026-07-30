@@ -1,4 +1,5 @@
 path+=('/home/linuxbrew/.linuxbrew/'{bin,sbin})
+path+=('/home/jumpyvi/.local/bin')
 
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
