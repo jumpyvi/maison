@@ -12,3 +12,6 @@ bindkey "^[[1;5D" backward-word
 bindkey "^H" backward-kill-word
 
 export PATH
+
+
+alias qemu-img="flatpak run --command=/app/lib/extensions/bin/qemu-img org.virt_manager.virt-manager"
