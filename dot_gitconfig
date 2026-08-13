@@ -3,11 +3,6 @@
 [user]
 	email = 62212220+jumpyvi@users.noreply.github.com
 	name = JumpyVi
-	signingkey = 82CEBF9336CDFF2E
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
