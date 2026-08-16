@@ -2,7 +2,12 @@
 	defaultBranch = master
 [user]
 	email = 62212220+jumpyvi@users.noreply.github.com
-	name = JumpyVi
+	name = jumpyvi
+	signingkey = 1561BBC155C8CB5C
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
