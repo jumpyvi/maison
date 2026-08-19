@@ -2,7 +2,7 @@
 	defaultBranch = master
 [user]
 	email = 62212220+jumpyvi@users.noreply.github.com
-	name = jumpyvi
+	name = JumpyVi
 	signingkey = 1561BBC155C8CB5C
 [commit]
 	gpgsign = true
@@ -13,3 +13,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[gpg]
+	program = gpg
