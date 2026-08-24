@@ -23,4 +23,3 @@ if [ -d ~/.config/bashrc.d ]; then
     done
 fi
 unset rc
-source -- ~/.local/share/blesh/ble.sh
