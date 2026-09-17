@@ -11,4 +11,6 @@ bindkey "^[[1;5D" backward-word
 
 bindkey "^H" backward-kill-word
 
+alias sudo="run0 --via-shell --background="""
+
 export PATH
