@@ -12,5 +12,15 @@ bindkey "^[[1;5D" backward-word
 bindkey "^H" backward-kill-word
 
 alias sudo="run0 --via-shell --background="""
+alias ls="eza --hyperlink=always"
+alias cd="z"
+
+
+HISTFILE=~/.local/share/zsh_history
+HISTSIZE=500
+SAVEHIST=5000
+setopt SHARE_HISTORY
 
 export PATH
+
+eval "$(zoxide init zsh)"
