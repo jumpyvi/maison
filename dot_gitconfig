@@ -3,13 +3,8 @@
 [user]
 	email = jumpyvi.git@tuta.com
 	name = JumpyVi
-	signingkey = A26077CC2F141DD0
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
