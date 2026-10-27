@@ -1,0 +1,14 @@
+
+[Unit]
+Description=Daily Rustic Backup & Prune
+After=network-online.target
+
+[Service]
+Type=oneshot
+Environment="PATH=%h/.local/bin:%h/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin"
+
+ExecStart=/home/linuxbrew/.linuxbrew/bin/rustic backup
+ExecStart=/home/linuxbrew/.linuxbrew/bin/rustic forget
+
+Restart=on-failure
+RestartSec=15m

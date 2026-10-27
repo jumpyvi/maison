@@ -1,0 +1,32 @@
+[repository]
+repository     = "opendal:sftp"
+password-file  = "/home/jumpyvi/.local/share/rustic/rustic.key"
+
+[repository.options]
+endpoint              = "ssh://alma-server:22"
+user                  = "jumpyvi"
+root                  = "/mnt/disks/small/backup/rustic"
+
+[backup]
+git-ignore          = true
+no-require-git      = true
+exclude-if-present  = [".nobackup", "CACHEDIR.TAG"]
+glob-files = ["/home/jumpyvi/.local/share/rustic/rustic-local.glob"]
+
+[[backup.snapshots]]
+name    = "home"
+sources = [
+  "/home/jumpyvi/Documents",
+  "/home/jumpyvi/.ssh",
+  "/home/jumpyvi/Games"
+]
+
+
+[forget]
+prune        = true
+keep-daily   = 7
+keep-weekly  = 2
+keep-monthly = 1
+keep-last    = 0
+keep-hourly  = 0
+keep-yearly  = 0
