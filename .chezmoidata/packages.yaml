@@ -1,0 +1,13 @@
+packages:
+  linux:
+    brews:
+    - 'git'
+    - 'pure'
+    - 'zsh'
+    - 'aria2'
+    - 'just'
+    - 'zoxide'
+    - 'eza'
+    - 'evil-helix'
+    - 'rustic'
+    - 'syncthing'
