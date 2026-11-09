@@ -18,7 +18,8 @@ name    = "home"
 sources = [
   "/home/jumpyvi/Documents",
   "/home/jumpyvi/.ssh",
-  "/home/jumpyvi/Games"
+  "/home/jumpyvi/Games",
+  "/home/jumpyvi/.keepass/vault"
 ]
 
 
